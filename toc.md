@@ -1,6 +1,6 @@
 ### Table Of Contents
 
-1. [Basic Data Types and Operators](#basic-data-types)
+1. [Intro To JavaScript](#intro)
 
 Direct link to lessons: [1](#lesson1)
 
