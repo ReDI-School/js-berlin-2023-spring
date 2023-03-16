@@ -146,3 +146,122 @@ Please install [Visual Studio Code](https://code.visualstudio.com/) for the next
 
 What did you try? What did you see?
 <!-- .element: class="fragment" -->
+
+---
+
+### Numerical Operators
+
+Basic mathematical operators:
+
+* `+` addition
+* `-` subtraction
+* `*` multiplication
+* `/` division
+* `**` exponentiation
+
+---
+
+### Practice
+
+Let's say we want to go to the cinema with some friends (choose any number).
+
+How many people are going to the cinema in total? Enter it to JavaScript Console.
+<!-- .element: class="fragment" -->
+
+A ticket to watch the movie costs 8€, let JavaScript compute how much we have to pay in total.
+<!-- .element: class="fragment" -->
+
+Harald and Woytek volunteered to pay for the tickets. Use JavaScript to compute how much each has to pay.
+<!-- .element: class="fragment" -->
+
+---
+
+### Data Types
+
+A data type is defined by two things:
+
+1. A set of values
+1. A set of operators
+
+The operators are used on the values.
+
+`2` and `3` are example *values* for the `Number` data type. `+` is an *operator* that we can use to perform an addition on `2` and `3`.
+
+When we say "Number data type", we mean all the possible number values plus all the operations we can perform with those values.
+
+---
+
+### Data Type: String
+
+* A **String** is a sequence of characters
+* It starts and ends with a `"` double quote
+* **Or** it starts and ends with a `'` single quote
+* Examples: `"Hello"`, `'Mellina'`
+
+---
+
+### Try it out
+
+Open the console, and type in the following strings:
+
+* Your first name
+* Your favorite food
+* Name of your favorite book / tv series / anime
+
+---
+
+### Strings and Quotes
+
+Strings start and end with  (`'`) or (`"`). But what if we want to add a quote within our string?
+
+```js
+"He said: "Hello""
+```
+
+We must escape the quote with a backslash (`\`).
+
+A backslash in a string means that the character right after the backslash is special:
+
+```js
+"He said: \"Hello\""
+```
+
+---
+
+### Special Characters
+
+If you want a backslash in a string, you need to escape it: `"\\"`
+
+There are some special characters in strings, for example:
+
+* `"\n"` - new line
+* `"\t"` - tab
+
+---
+
+
+### Quiz: Which strings are correct?
+
+```plaintext
+"Hello"
+'World'
+"He said "hello" to me"
+'Let's go!'
+""
+'This is a\nnew line'
+'This is a backslash: \'
+```
+
+---
+
+### Solution
+
+```js
+"Hello"                        // CORRECT
+'World'                        // CORRECT
+"He said "hello" to me"        // WRONG - unescaped quotes
+'Let's go!'                    // WRONG - unescaped '
+""                             // CORRECT
+'This is a\nnew line'          // CORRECT
+'This is a backslash: \'       // WRONG - escaped '
+```
