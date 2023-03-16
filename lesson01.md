@@ -9,8 +9,6 @@ Lesson 1, Tuesday, 2023-03-16
 ### Lesson overview
 
 - Introduction to JavaScript
-- Basic JavaScript data types
-- Basic JavaScript operators
 
 ---
 
