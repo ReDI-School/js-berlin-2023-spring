@@ -100,7 +100,7 @@ Hello, my name is + (name) + and I like (food)
 
 ### String operators
 
-We cannot use other operators (like `-`, `/`, `*`) on strings, we can only use `+`.
+We shouldn't use other operators (like `-`, `/`, `*`) on strings, while javascript may allow that, the results are unexpected, with strings, we should only use `+`.
 
 ---
 
@@ -214,11 +214,6 @@ There are a couple of operators that we can use for numbers only
 42 >= 50 // false
 ```
 <!-- .element: class="fragment" -->
-
-
-
----
-
 
 
 ---
