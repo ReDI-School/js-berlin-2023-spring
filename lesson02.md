@@ -93,7 +93,7 @@ It is important to select the appropriate data type for your data, as the behavi
 use the `+` operator to combine multiple strings to match the following sentence:
 
 
-Hello, my name is + (name) + and I am from + (country)
+Hello, my name is + (name) + and I like (food)
 
 ---
 
