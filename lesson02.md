@@ -84,8 +84,7 @@ The addition operator can be used on Strings and Numbers:
 "1" + "1"    // is "11"
 ```
 
-Make sure to always choose the correct data type for your data,
-since the operators in JavaScript behave differently depending on the data type.
+It is important to select the appropriate data type for your data, as the behavior of operators in JavaScript varies depending on the data type used.
 
 ---
 
