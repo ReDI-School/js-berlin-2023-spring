@@ -11,6 +11,8 @@
 * Upload the lesson as GitHub pull request
   * Note: It's perfectly ok to not be an expert in git / GitHub. You can also send your lesson to another teacher for uploading. Also check the "GitHub cheat sheet" below.
 
+See lessons from the last semester as an inspiration: https://github.com/ReDI-School/js-berlin-2022-fall
+
 # How to test your lesson on your computer
 
 ## With node
