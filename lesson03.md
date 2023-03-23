@@ -268,6 +268,142 @@ let canApply = knowsGerman || knowsEnglish;
 
 ---
 
+### Operator associativity
+
+What happens when there's more than one of the **same** operator in one line?
+
+```js
+1 / 2 / 2
+```
+
+Answer: 0.25 <!-- .element: class="fragment" -->
+
+Most operators are left-to-right associative. If in doubt,
+consult [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+<!-- .element: class="fragment" -->
+
+---
+
+### Quiz
+
+What's the result?
+
+```js
+2 ** 3 ** 2
+```
+
+Answer: 512 (exponentiation is right-to-left associative!) <!-- .element: class="fragment" -->
+
+---
+
+### Hint: Use Parentheses
+
+Note: Round parentheses (or "grouping operator") `()` can be used to group expressions:
+
+```js
+(2 ** 3) ** 2  // 64
+2 ** (3 ** 2)  // 512
+```
+
+---
+
+### Operator precedence
+
+What happens if we mix **different** operators in one line? What could the result be?
+
+```js
+2 + 2 * 2
+```
+
+Result: `6` <!-- .element: class="fragment" -->
+
+---
+
+* JavaScript supports precedence (priority) for operators
+* Operators with higher precedence are evaluated before operators with lower precedence
+* Full List: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+* Multiplication (15) has higher precedence than addition (14) - multiplication wins
+
+---
+
+Parentheses have the highest precedence (21) and always win:
+
+```js
+(2 + 2) * 2   // 8
+2 + (2 * 2)   // 6
+```
+
+When in doubt, use parentheses!
+
+---
+
+### Quiz
+
+What is `x` ?
+
+```js
+let x = 4 + 6 < 3 + 8;
+```
+
+Result: `true` <!-- .element: class="fragment" -->
+
+---
+
+### Best practice: Use extra variables
+
+Which of the two is more readable?
+
+```js
+let x = 4 + 6 < 3 + 8;
+```
+
+```js
+let sum1 = 4 + 6;
+let sum2 = 3 + 6;
+let x = sum1 < sum2;
+```
+
+---
+
+### Quiz
+
+What is `x`?
+
+```js
+let x = 5 < 6 < 7
+```
+
+* Answer: It's pointless  <!-- .element: class="fragment" -->
+
+---
+
+Let's break it down:
+
+```js
+5 < 6 < 7
+(5 < 6) < 7   // 5 < 6 is true
+true < 7      // pointless comparison!
+```
+
+Comparing a boolean to a number makes no sense. Do not chain comparison operators.
+
+---
+
+### Quiz
+
+What does the following return?
+
+```js
+5 === 5 === 5
+```
+
+```js
+(5 === 5) === 5
+true === 5         // Pointless. Returns false
+```
+
+---
+
 ### Task
 
 A job add requires JavaScript or Python knowledge. Can you finish the code below?
@@ -340,3 +476,4 @@ let isPopcornCheap = popcornPrice < 5;
 let isTicketCheap = pricePerTicket < 7;
 let isCheap = isPopcornCheap && isTicketCheap;
 ```
+
