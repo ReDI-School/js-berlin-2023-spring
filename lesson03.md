@@ -427,7 +427,7 @@ let friends = 3;
 let totalPrice = friends * pricePerTicket;
 ```
 
-* Copy/paste this code and look at the `totalPrice` variable in the console.
+* Copy/paste this code
 * Add a new variable that points to the price of popcorn (7 EUR).
 * Can you add the price for one popcorn to the `totalPrice` variable?
 * Create a new variable containing your total budget (30 EUR).
