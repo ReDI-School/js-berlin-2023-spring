@@ -80,6 +80,23 @@ document.body.textContent += " World";
 
 ---
 
+### Quiz
+
+What is the value of `x`?
+
+```js
+let x = 42;
+let y = 2;
+x /= y;
+x += 3;
+console.log(x);
+```
+
+x is 24
+<!-- .element: class="fragment" -->
+
+---
+
 ### Recap: if statements
 
 ```js
