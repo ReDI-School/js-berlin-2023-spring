@@ -280,6 +280,22 @@ Example: my friends are Harald, Sevtap, Akram and Abdo. The output should be:
 
 ---
 
+### Task 1 - Solution
+
+```js
+let friends = ["Harald", "Sevtap", "Akram", "Abdo", "Mell"];
+let total = friends.length * 7;
+let half = total / 2;
+let halfDividedByRest = half / (friends.length - 2); // the remainder number of friends is always the total minus 2 (the first and last friend)
+
+console.log(friends[0] + " pays " + half);
+console.log("The others pay " + halfDividedByRest + " each");
+console.log("Congratulations " + friends[friends.length - 1] + "! You pay nothing");
+```
+
+---
+
+
 ### Task 2
 Let's say your last friend had a fight with you and now you want to update your array and **change their name to a generic "Karen"**.
 Using your previously created array, update it with the new friend.
@@ -287,3 +303,16 @@ Using your previously created array, update it with the new friend.
 Then, you met a new friend and want to **add** them to your list. Update your array and log: 
 
 `Welcome, <person name> to our group of friends!`
+
+
+---
+
+### Task 2 - Solution
+
+```js
+friends[friends.length - 1] = "Karen"; // update last item to be "Karen"
+console.log("New friends: " + friends);
+
+friends.push("Obama"); // add a new item to the end of the array. Our friend calls "Obama"
+console.log("Welcome, " + friends[friends.length - 1] + " to our group of friends!");
+```
