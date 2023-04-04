@@ -256,26 +256,34 @@ console.log(friends[3]); // David
 ---
 
 ### Task 1
-Create an array of friends (any number more than 3). Calculate the total price of the show (costs 7 euros each ticket).
+Create an array of friends (any number more than 3).
 
-It is the birthday of the last friend.
+Calculate the total price of the show (costs 7 euros each ticket). It is the birthday of the last friend, so you want to gift them.
 
+It will go like this:
 - The first friend will pay half of the total price.
 - The remaining will pay the other half.
 - The last person pays nothing.
 
-Console log:
+Print the results in the console.
+
+---
+
+Example: my friends are Harald, Sevtap, Akram and Abdo. The output should be:
+
 
 ```
-"Person 1 pays x"
-"The others pay y each"
-"Congratulations Person last!"
+"Harald pays 14"
+"The others pay 7 each"
+"Congratulations Abdo! You pay nothing"
 ```
 
 ---
 
 ### Task 2
-Let's say your last friend had a fight with you and now you want to update your array and change their name to a generic "Karen".
-Update your list with the new friend.
+Let's say your last friend had a fight with you and now you want to update your array and **change their name to a generic "Karen"**.
+Using your previously created array, update it with the new friend.
 
-Second, you met a new friend and want to add them to your list. Update your array and log: `Welcome, <person name> to our group of friends!`
+Then, you met a new friend and want to **add** them to your list. Update your array and log: 
+
+`Welcome, <person name> to our group of friends!`
