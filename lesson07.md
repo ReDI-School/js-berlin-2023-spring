@@ -1,4 +1,4 @@
-<!-- .slide: id="loops" -->
+<!-- .slide: id="lesson7" -->
 
 # Loops
 
