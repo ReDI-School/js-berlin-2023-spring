@@ -1,5 +1,13 @@
 <!-- .slide: id="lesson7" -->
 
+# Basic Frontend - Spring 2023
+
+Lesson 7, Thursday, 2023-04-06
+
+---
+
+<!-- .slide: id="loops" -->
+
 # Loops
 
 ---
