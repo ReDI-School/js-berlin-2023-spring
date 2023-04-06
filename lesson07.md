@@ -222,7 +222,7 @@ Answer: 5 times <!-- .element: class="fragment" -->
 - Output the sum of the first 10 numbers (e.g. 1 + 2 + 3 + ...)
 - Output a countdown from 10 to 0 to console (e.g. 10, 9, 8, ...)
   - Bonus: Instead of zero, output "liftoff!"
-  - Bonus: Instead of counting down to console.log, write the output to a `div` element
+  - Bonus: Instead of counting down to console.log, write the output to a an HTML page
 
 ---
 
@@ -282,10 +282,9 @@ while (i >= 0) {
 Countdown to `div`:
 
 ```js
-let myDiv = document.getElementById('myDiv');
 let i = 10;
 while (i >= 0) {
-  myDiv.textContent += i + ' ';
+  document.body.textContent += i + ' ';
   i--;
 }
 ```
