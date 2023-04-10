@@ -33,7 +33,7 @@ A single HTML element can have multiple values associated with it:
 
 ```html
 <img src="cat.jpg" alt="Cute cat" width="120" height="100"/>
-<input type="text" placeholder="Enter name" />
+<input type="text" placeholder="Enter name" disabled/>
 ```
 ---
 
@@ -285,7 +285,7 @@ let person = {
         street: "Karl-Max Alle 35",
         city: "Berlin"
     }
-}
+};
 ```
 
 ---
