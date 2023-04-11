@@ -435,3 +435,16 @@ You can find the exercise solutions here
 - [Exercise 3](2023-04-11-intro-objects/exercise3.js)
 - [Exercise 4](2023-04-11-intro-objects/exercise4.js)
 
+---
+
+You can practice loops with these exercises
+
+- [Forbidden Word](2023-04-11-loop-exercises/exercise-task-1.js)
+- [Forbidden Word Solution](2023-04-11-loop-exercises/exercise-solution-1.js)
+- [Youtube Upload Count](2023-04-11-loop-exercises/exercise-task-2.js)
+- [Youtube Upload Count Solution](2023-04-11-loop-exercises/exercise-solution-2.js)
+
+<pre>These exercises are adapted from Edabit Exercises.</pre>
+Original exercises:
+- [Forbidden Letter](https://edabit.com/challenge/AhFCvDdQeA7TnKSqe)
+- [Youtube Upload Count](https://edabit.com/challenge/GoXcArzHKTWaA8C2z)
