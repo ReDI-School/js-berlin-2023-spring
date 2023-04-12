@@ -207,6 +207,7 @@ For loops and arrays work wonderfully together!
 
 ```js
 let languages = ["english", "german", "arabic", "russian"]
+
 for (let i = 0; i < languages.length; i++){
   console.log(languages[i]);
 }
