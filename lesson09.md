@@ -201,6 +201,20 @@ use a for loop and output the numbers between 5 and -3 to the console
 
 ---
 
+### For loops & arrays
+
+For loops and arrays work wonderfully together!
+
+```js
+let languages = ["english", "german", "arabic", "russian"]
+for (let i = 0; i < languages.length; i++){
+  console.log(languages[i]);
+}
+```
+
+
+---
+
 ### Task
 
 Now, go back to the exercise we did before the break in the group, and replace `while` with `for`.
