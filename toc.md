@@ -6,9 +6,10 @@
 1. [Arrays](#arrays)
 1. [Loops](#loops)
 1. [Objects](#intro-objects)
+1. [For Loops](#forLoop)
 
 
-Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8)
+Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8) [9](#lesson9)
 
 
 NOTE: when we have too many entries that don't fit on one screen we can use this <!-- .slide: style="font-size:80%" -->
