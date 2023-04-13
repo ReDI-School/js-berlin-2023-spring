@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Exercises</title>
+</head>
+
+<body>
+  <script>
+    /*
+    Finish the following functions. Don't hesitate to ask for help :)
+    */
+
+    /*
+    Use a loop to reverse the given array.
+    Example: An input array of [3,2,1] should return
+    a new array with [1,2,3]
+    */
+    function reverseArray(arr) {
+      // your code here
+    }
+
+    // don't touch this ;)
+    testReverseArray();
+
+    /*
+    Use a loop to compute the sum of all numbers
+    in the given array. Return the sum.
+
+    Example: With an input of [1,2,3], it should return 1+2+3 which is 6
+    */
+    function sum(arr) {
+      // your code here
+    }
+
+    // don't touch this :)
+    testSum();
+
+    /*
+    Use a loop to compute the smallest number
+    in the given array. Return it.
+
+    Example: With an input of [1,2,3] it should return 1.
+    */
+    function min(arr) {
+      // your code here
+    }
+
+    // don't touch this :)
+    testMin();
+
+    /*
+    Compute the arithmetic mean of the given array.
+    The mean is the sum of all values divided by the length
+    of the array. Return if from your function.
+
+    Example: input: [1, 2, 3], compute the sum (6),
+    divide by length of array (3).
+    Result is 6 / 3 which is 2. Return the result.
+
+    Remember that you can call functions from functions. Can we
+    call a function that we already implemented above?
+    */
+    function mean(arr) {
+      // your code here
+    }
+
+    // don't touch this :)
+    testMean()
+
+    /*
+    Congrats, you're done :)
+    */
+
+    function testReverseArray() {
+      document.body.innerHTML += "<h1>Reverse Array</h1>";
+      document.body.innerHTML += "Expected: 4,3,2,1<br>";
+      document.body.innerHTML += "Got: " + reverseArray([1, 2, 3, 4]);
+
+      document.body.innerHTML += "<br/>Expected: c,b,a <br/>";
+      document.body.innerHTML += "Got: " + reverseArray(["a", "b", "c"]);
+
+      document.body.innerHTML += "<br/>Expected: \"\"<br/>";
+      document.body.innerHTML += "Got: \"" + reverseArray([]) + '"';
+    }
+
+    function testSum() {
+      document.body.innerHTML += "<h1>Sum Array</h1>";
+      document.body.innerHTML += "Expected: 10 <br/>";
+      document.body.innerHTML += "Got: " + sum([1, 2, 3, 4]);
+
+      document.body.innerHTML += "<br/>Expected: 0 <br/>";
+      document.body.innerHTML += "Got: " + sum([]);
+    }
+
+    function testMin() {
+      document.body.innerHTML += "<h1>Min of Array</h1>";
+      document.body.innerHTML += "Expected: 42 <br/>";
+      document.body.innerHTML += "Got: " + min([50, 102, 42, 420]);
+
+      document.body.innerHTML += "<br/>Expected: -3 <br/>";
+      document.body.innerHTML += "Got: " + min([4, -4, 99, -1]);
+    }
+
+    function testMean() {
+      document.body.innerHTML += "<h1>Mean of Array</h1>";
+      document.body.innerHTML += "Expected: 153.5 <br/>";
+      document.body.innerHTML += "Got: " + mean([50, 102, 42, 420]);
+
+      document.body.innerHTML += "<br/>Expected: 95.6 <br/>";
+      document.body.innerHTML += "Got: " + mean([4, -4, 99, -1, -12]);
+    }
+  </script>
+</body>
+
+</html>
