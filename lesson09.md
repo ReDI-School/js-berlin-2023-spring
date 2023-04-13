@@ -128,11 +128,6 @@ Each object should contain the name of the person, their age, and their favorite
 
 Use a while loop to find the names of all people who like the same food as you. Put these names into an array, and output this array into the console.
 
----
-
-### Part 3
-
-Use a while loop to find the names of all people younger and older than you, put them in 2 different arrays, and output these array into the console.
 
 ---
 
@@ -276,6 +271,6 @@ for (let i = 0; i < languages.length; i++){
 
 ---
 
-### Task
+### Part 3
 
-Now, go back to the exercises we did before the break in the group, and replace `while` with `for`.
+Now, go back to the exercises we did before the break in the group, use a for loop to find the names of all people younger and older than you, put them in 2 different arrays, and output these array into the console.
