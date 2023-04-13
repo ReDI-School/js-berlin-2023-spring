@@ -136,23 +136,20 @@ Use a while loop to find the names of all people younger and older than you, put
 
 ---
 
-### Recap
+### Review
 
-What are the components of a `while` loop?
-
-
+So far, our `while` loops have followed the same basic structure:
 ```js
-while (condition){
-  // do something
-  // update condition, otherwise we have an endless loop
+let i = 1; // initialization
+while (i <= 10) {  // condition
+    // do something
+
+    i++; // update
 }
-
 ```
-<!-- .element: class="fragment" -->
+We can see that we are often initializing some integer variable before the loop as a counter, and updating the variable at the end of the loop.
 
----
-
-There is a more compact way of expressing what we want to do with while loops, that is also less error prone, and that is called a `for` loop!
+But we're programmers... we like to simplify things! Is there a more concise way?
 
 ---
 
@@ -169,16 +166,79 @@ for (let counter = 0; counter < 10; counter++){
 ```
 
 ---
+### For loops
+
+A `for` loop works like a `while` loop, but it's more concise.
+
+```js
+for (initialization; condition; update) {
+  // loop body
+}
+```
+
+
+---
 
 ### Anatomy of a for loop
 
 - `for`
 - `(`
-- `let variableName = some value`
+-  initialization
 - `;`
 - condition
 - `;`
 - update
+
+The 3 main parts of the loop are all in one line, separated by semicolons (`;`).
+
+---
+
+### For loop
+
+Let's replace our `while` loop with a `for`:
+
+```js
+let i = 1;       // part 1 - *initialize* the counter
+while (i < 6) {  // part 2 - *test* the exit *condition*
+  console.log(i);// loop body
+  i++;           // part 3 - *update* the counter
+}
+
+// same code with for loop:
+
+for (let i = 1; i < 6; i++) {
+  console.log(i);
+}
+```
+
+---
+
+### For loop - summary
+
+* A `while` loop executes its body while the condition is `true`.
+* A `for` loop *first* runs the **initialization** part, then tests the **condition** part
+and, if it is `true`, executes the body. After every loop, it executes the **update** part.
+
+---
+
+### For vs. while
+
+* We use a `for` loop if we know in advance how often it will be executed.
+
+```js
+for (let i = 0; i < 1000; i++) {
+  console.log(i);
+}
+```
+
+* We use a `while` loop if we don't know how many times the loop will be executed.
+
+```js
+while (passwordIsWrong) {
+  askForPassword();
+}
+```
+
 
 ---
 
@@ -218,4 +278,4 @@ for (let i = 0; i < languages.length; i++){
 
 ### Task
 
-Now, go back to the exercise we did before the break in the group, and replace `while` with `for`.
+Now, go back to the exercises we did before the break in the group, and replace `while` with `for`.
