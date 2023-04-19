@@ -160,7 +160,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLDivElement
 
 ### DOM - Document Object Model
 
-How can HTMl and Javascript communicate?
+How can HTML and JavaScript communicate?
 
 There is an interface called DOM, which communicates the HTML to a nested **object** structure.
 
@@ -214,7 +214,7 @@ function handleButtonClick() { /* TODO */ }
 
 ### Example: Changing the background color
 
-The browser provides a value in `document.body.style.backgroundColor`
+The browser provides a value in `document.body.style.backgroundColor` of every HTML element.
 
 We can assign a new one to `document.body.style.backgroundColor` to change the background color of our HTML page.
 
