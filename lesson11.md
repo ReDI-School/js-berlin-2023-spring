@@ -113,6 +113,46 @@ let finalScore = sum(2, 3);
 
 ---
 
+### Functions - Methods
+
+When a function is a **value** in an object property, then we can call it **method**.
+
+```js
+let me = {
+    goShopping: function() { console.log("ok ok I'm going shopping"); }
+}
+```
+
+---
+
+### Functions - Methods
+
+We can also reference it:
+
+```js
+function goShopping() {
+  console.log("ok ok I'm going shopping");
+}
+
+let me = {
+  goShopping: goShopping
+}
+```
+
+In this case, we don't call it (don't add the `()` at the end of the function name)
+
+---
+
+### Methods - Execution
+
+Then, to execute it, access just like a normal object property:
+
+```js
+me.goShopping(); // prints "ok ok I'm going shopping"
+```
+
+---
+
 ### Manipulate HTML Elements from JavaScript
 
 Let's say we have a HTML element:
