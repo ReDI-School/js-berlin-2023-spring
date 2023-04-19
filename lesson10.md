@@ -24,6 +24,7 @@ Which data types have we seen so far?
 |--------|-----------|------------|
 | null   | `null`    | `===` `!==` |
 | undefined | `undefined` | `===` `!==` |
+| boolean | `true` | `&&`, `!`, <code>&#124;&#124;</code> |
 | number | `-0.5`, `42` | `+`, `-`, `*`, `/`, `**` |
 | string | `"hello"` | `+` |
 | array | `[42, 43]` | `===` `!==` |
