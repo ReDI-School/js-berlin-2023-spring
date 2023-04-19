@@ -214,7 +214,7 @@ function handleButtonClick() { /* TODO */ }
 
 ### Example: Changing the background color
 
-The browser provides a value in `document.body.style.backgroundColor` of every HTML element.
+The browser provides a value in the `body.style.backgroundColor` property for every HTML element, for example `document.body.style.backgroundColor`.
 
 We can assign a new one to `document.body.style.backgroundColor` to change the background color of our HTML page.
 
