@@ -113,6 +113,46 @@ let finalScore = sum(2, 3);
 
 ---
 
+### Functions - Methods
+
+When a function is a **value** in an object property, then we can call it **method**.
+
+```js
+let me = {
+    goShopping: function() { console.log("ok ok I'm going shopping"); }
+}
+```
+
+---
+
+### Functions - Methods
+
+We can also reference it:
+
+```js
+function goShopping() {
+  console.log("ok ok I'm going shopping");
+}
+
+let me = {
+  goShopping: goShopping
+}
+```
+
+In this case, we don't call it (don't add the `()` at the end of the function name)
+
+---
+
+### Methods - Execution
+
+Then, to execute it, access just like a normal object property:
+
+```js
+me.goShopping(); // prints "ok ok I'm going shopping"
+```
+
+---
+
 ### Manipulate HTML Elements from JavaScript
 
 Let's say we have a HTML element:
@@ -160,7 +200,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLDivElement
 
 ### DOM - Document Object Model
 
-How can HTMl and Javascript communicate?
+How can HTML and JavaScript communicate?
 
 There is an interface called DOM, which communicates the HTML to a nested **object** structure.
 
@@ -214,7 +254,7 @@ function handleButtonClick() { /* TODO */ }
 
 ### Example: Changing the background color
 
-The browser provides a value in `document.body.style.backgroundColor`
+The browser provides a value in the `body.style.backgroundColor` property for every HTML element, for example `document.body.style.backgroundColor`.
 
 We can assign a new one to `document.body.style.backgroundColor` to change the background color of our HTML page.
 
