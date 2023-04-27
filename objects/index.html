@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  <title>Function Exercises</title>
+</head>
+
+<body>
+  <script>
+    /*
+    Finish the following functions. Use only what we learned in class.
+
+    Don't hesitate to ask for help :)
+    */
+
+    /*
+    change the `me` object so a caller can write
+    `me.age` to obtain the value 42.
+    */
+    function object1() {
+      let me = {
+
+      };
+      return me;
+    }
+
+    /*
+    change the `me` object so a caller can write
+    `me.address.city` to obtain the value "Berlin".
+    */
+    function object2() {
+      let me = {
+
+      };
+      return me;
+    }
+
+    /*
+    change the `me` object so a caller can write
+    `me.address[0].city` to obtain the value "Berlin".
+    */
+    function object3() {
+      let me = {
+
+      };
+      return me;
+    }
+
+    /*
+    change the `me` object so a caller can write
+    `me.address()[0].city` to obtain the value "Berlin".
+    */
+    function object4() {
+      let me = {
+
+      };
+      return me;
+    }
+
+    /*
+  Congrats, you're done :) Don't touch the code below!
+  */
+  </script>
+
+  <div id="mocha"></div>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script>
+    mocha.setup("bdd");
+
+    const expect = chai.expect;
+
+    describe("object1", function () {
+      it("Returns an object", function () {
+        expect(object1()).to.be.an('object');
+      });
+      it("Has an age property", function () {
+        expect(object1()).to.have.property('age');
+      });
+      it("Age should be 42", function () {
+        expect(object1().age).to.equal(42);
+      });
+    });
+
+    describe("object2", function () {
+      it("Returns an object", function () {
+        expect(object2()).to.be.an('object');
+      });
+      it("Has address property", function () {
+        expect(object2()).to.have.property('address');
+      });
+      it("City should be Berlin", function () {
+        expect(object2().address.city).to.equal("Berlin");
+      });
+    });
+
+    describe("object3", function () {
+      it("Returns an object", function () {
+        expect(object3()).to.be.an('object');
+      });
+      it("Has address array property", function () {
+        expect(object3()).to.have.property('address');
+        expect(object3().address).to.be.be.an('array');
+      });
+      it("City should be Berlin", function () {
+        expect(object3().address[0].city).to.equal("Berlin");
+      });
+    });
+
+    describe("object4", function () {
+      it("Returns an object", function () {
+        expect(object4()).to.be.an('object');
+      });
+      it("Has address member function", function () {
+        expect(object4()).to.have.property('address');
+        expect(object4().address).to.be.be.a('function');
+        expect(object4().address()).to.be.be.an('array');
+      });
+      it("City should be Berlin", function () {
+        expect(object4().address()[0].city).to.equal("Berlin");
+      });
+    });
+
+    mocha.run();
+  </script>
+</body>
+
+</html>
