@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty Characters</title>
+</head>
+<body>
+    <div id="characters"></div>
+
+    <script>
+        let charactersDiv = document.getElementById('characters');
+
+        function createPaginationButton(text, url) {
+            let button = document.createElement('button');
+            button.textContent = text;
+            button.onclick = function() {
+                // get another page of characters
+                getCharacters(url);
+            }
+            return button;
+        }
+
+        function createPaginationElement(info) {
+            // create a new div for pagination
+            let paginationDiv = document.createElement('div');
+
+            // add pagination buttons
+            if (info.prev !== null) {
+                let button = createPaginationButton('Previous', info.prev);
+                paginationDiv.appendChild(button);
+            }
+            if (info.next !== null) {
+                let button = createPaginationButton('Next', info.next);
+                paginationDiv.appendChild(button);
+            }
+
+            return paginationDiv;
+        }
+
+        function createDetail(text) {
+            let detailElement = document.createElement('li');
+            detailElement.textContent = text;
+            return detailElement;
+        }
+
+        function createCharacter(character) {
+            let characterDiv = document.createElement('div');
+
+            // heading element
+            let characterHeading = document.createElement('h2');
+            // add the character name to the div
+            characterHeading.textContent = character.name;
+            // append the div to the characters div
+            characterDiv.appendChild(characterHeading);
+
+            // show some properties
+            let listElement = document.createElement('ul');
+            let statusElement = createDetail('Status: ' + character.status);
+            let speciesElement = createDetail('Species: ' + character.species);
+            listElement.appendChild(statusElement);
+            listElement.appendChild(speciesElement);
+            characterDiv.appendChild(listElement);
+
+            // create an image element
+            let image = document.createElement('img');
+            // set the image src to the character image
+            image.src = character.image;
+            characterDiv.appendChild(image);
+
+            return characterDiv;
+        }
+
+        function renderCharacters(characters) {
+            // first, clear the characters div
+            charactersDiv.innerHTML = '';
+
+            // loop through characters
+            for (let i = 0; i < characters.results.length; i++) {
+                // for ever character, create one div
+                let characterDiv = createCharacter(characters.results[i]);
+                // append the div to the characters div
+                charactersDiv.appendChild(characterDiv);
+            }
+
+            // add pagination
+            let paginationDiv = createPaginationElement(characters.info);
+            charactersDiv.appendChild(paginationDiv);
+        }
+
+        async function getCharacters(url) {
+            const response = await fetch(url);
+            const characters = await response.json();
+            renderCharacters(characters);
+        }
+
+        // start with page 1
+        getCharacters('https://rickandmortyapi.com/api/character');
+    </script>
+</body>
+</html>
