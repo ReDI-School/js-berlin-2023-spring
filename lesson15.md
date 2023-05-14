@@ -28,10 +28,8 @@ Lesson 15, Tuesday, 2023-05-16
 
 ```js
 async function fetchDataFromApi() {
-  const res = await fetch(
-    'https://v2.jokeapi.dev/joke/Programming?type=single'
-  );
-  const json = await res.json();
+  let res = await fetch('https://v2.jokeapi.dev/joke/Programming?type=single');
+  let json = await res.json();
   console.log(json.joke);
 }
 ```
