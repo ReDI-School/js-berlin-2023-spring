@@ -90,3 +90,15 @@ git commit -a -m 'Add lesson 42'
 ```sh
 gh pr create
 ```
+
+
+## Extra Resources
+
+Libraries:
+
+https://github.com/sorrycc/awesome-javascript
+
+
+APIs:
+
+https://github.com/public-apis/public-apis
