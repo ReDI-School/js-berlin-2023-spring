@@ -198,6 +198,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/HTMLDivElement
 
 ---
 
+<!-- .slide: id="DOM" -->
+
 ### DOM - Document Object Model
 
 How can HTML and JavaScript communicate?

@@ -8,7 +8,7 @@
 1. [Objects](#intro-objects)
 1. [For Loops](#forLoop)
 1. [Functions](#functions)
-1. [DOM](#Manipulate-HTML-Elements-from-JavaScript)
+1. [DOM](#DOM)
 1. [JSON](#JSON)
 1. [fetch API](#fetch)
 
